@@ -115,3 +115,76 @@ print(result_1)  # 8
 
 result_2 = pow(2, 3, 5)  # (2 ** 3) % 5
 print(result_2)  # 3
+
+# Augmented Assignments ------------------
+
+# variable <operator> = value
+# Is the same as
+# variable = variable <operator> value
+
+my_var = 10
+my_var += 5
+
+print(my_var)  # 15
+
+# is the same as
+
+my_var = 10
+my_var = my_var + 5
+
+print(my_var)  # 15
+
+my_var = 14
+my_var -= 3
+
+print(my_var)  # 11
+
+product = 65
+product *= 7
+
+print(product)  # 455
+
+price = 100
+price /= 4  # division
+print(price)  # 25.0
+
+total_pages = 23
+total_pages //= 5  # floor divides the left variable
+
+print(total_pages)  # 4
+
+bits = 35
+bits %= 2
+
+print(bits)  # 1
+
+power = 2
+power **= 3  # 2 to the power of 3
+
+print(power)  # 8
+
+greet = "Hello"
+greet *= 3
+
+print(greet)  # HelloHelloHello
+
+greet = "Hello"
+greet -= " World"
+
+print(greet)  # TypeError: unsupported operand type(s) for -=: 'str' and 'str'
+
+
+greet = "Hello"
+greet /= "World"
+
+print(greet)  # TypeError: unsupported operand type(s) for /=: 'str' and 'str'
+
+my_var = 5
+# Incremend and decrement operators dont work in python (++ and --)
+print(+my_var)  # 5
+print(++my_var)  # 5
+print(+++my_var)  # 5
+
+my_var += 1
+
+print(my_var)  # 6
