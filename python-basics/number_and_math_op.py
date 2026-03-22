@@ -169,13 +169,13 @@ greet *= 3
 print(greet)  # HelloHelloHello
 
 greet = "Hello"
-greet -= " World"
+# greet -= " World"
 
 print(greet)  # TypeError: unsupported operand type(s) for -=: 'str' and 'str'
 
 
 greet = "Hello"
-greet /= "World"
+# greet /= "World"
 
 print(greet)  # TypeError: unsupported operand type(s) for /=: 'str' and 'str'
 
