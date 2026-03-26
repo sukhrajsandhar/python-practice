@@ -29,7 +29,7 @@ def create_character(char_name, strength, intelligence, charisma):
         int_empty_dot_amount = empty_dot * (10 - int_dot_amount.count("●"))
         cha_empty_dot_amount = empty_dot * (10 - cha_dot_amount.count("●"))
 
-        return f"{char_name}\nSTR {str_dot_amount}{str_empty_dot_amount} \nINT {int_dot_amount}{int_empty_dot_amount}\nCHA {cha_dot_amount}{cha_empty_dot_amount}"
+        return f"{char_name}\nSTR {str_dot_amount}{str_empty_dot_amount}\nINT {int_dot_amount}{int_empty_dot_amount}\nCHA {cha_dot_amount}{cha_empty_dot_amount}"
 
 
-print(create_character("coolguy", 4, 2, 1))
+print(create_character("ren", 4, 2, 1))
