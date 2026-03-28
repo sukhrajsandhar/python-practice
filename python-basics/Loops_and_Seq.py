@@ -40,3 +40,21 @@ name, age, job = developer
 print(name)  # 'Alice'
 print(age)  # 34
 print(job)  # 'Rust Developer'
+
+developer = ["Alice", 34, "Rust Developer"]
+name, *rest = developer
+
+# If you need to collect any remaining elements from a list, you can use the asterisk (*) operator like this:
+print(name)  # 'Alice'
+print(rest)  # [34, 'Rust Developer']
+
+developer = ["Alice", 34, "Rust Developer"]
+name, age, job, city = developer
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: not enough values to unpack (expected 4, got 3)
+"""
+desserts = ["Cake", "Cookies", "Ice Cream", "Pie", "Brownies"]
+desserts[1:4]  # ['Cookies', 'Ice Cream', 'Pie']
