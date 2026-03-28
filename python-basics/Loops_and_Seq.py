@@ -228,3 +228,58 @@ print(sorted(programming_languages, reverse=True))
 
 # Result
 # ['Rust', 'Rust', 'Python', 'Python', 'Java', 'C++']
+
+# Loops -------------------------------------- Below
+
+programming_languages = ["Rust", "Java", "Python", "C++"]
+
+for language in programming_languages:
+    print(language)
+
+# ^ Will print out the entire list, Make sure of your indentation
+
+for char in "code":
+    print(char)
+
+# Out put will be each character on a new line.
+
+categories = ["Fruit", "Vegetable"]
+foods = ["Apple", "Carrot", "Banana"]
+
+for category in categories:
+    for food in foods:
+        print(category, food)
+
+# Output:
+# Fruit Apple
+# Fruit Carrot
+# Fruit Banana
+# Vegetable Apple
+# Vegetable Carrot
+# Vegetable Banana
+
+secret_number = 3
+guess = 0
+
+while guess != secret_number:
+    guess = int(input("Guess the number (1-5): "))
+    if guess != secret_number:
+        print("Wrong! Try again.")
+
+print("You got it!")
+
+developer_names = ["Jess", "Naomi", "Tom"]
+
+for developer in developer_names:
+    if developer == "Naomi":
+        break
+    print(developer)  # Only Jess is printed
+
+developer_names = ["Jess", "Naomi", "Tom"]
+
+for developer in developer_names:
+    if developer == "Naomi":
+        continue
+    print(developer)
+
+# Continue skips the second iteration of the loop so only Jess and Tom are printed
