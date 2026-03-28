@@ -283,3 +283,13 @@ for developer in developer_names:
     print(developer)
 
 # Continue skips the second iteration of the loop so only Jess and Tom are printed
+
+words = ["sky", "apple", "rhythm", "fly", "orange"]
+
+for word in words:
+    for letter in word:
+        if letter.lower() in "aeiou":
+            print(f"'{word}' contains the vowel '{letter}'")
+            break
+    else:
+        print(f"'{word}' has no vowels")
