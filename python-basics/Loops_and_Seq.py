@@ -58,3 +58,6 @@ ValueError: not enough values to unpack (expected 4, got 3)
 """
 desserts = ["Cake", "Cookies", "Ice Cream", "Pie", "Brownies"]
 desserts[1:4]  # ['Cookies', 'Ice Cream', 'Pie']
+
+numbers = [1, 2, 3, 4, 5, 6]
+numbers[1::2]  # [2, 4, 6]
