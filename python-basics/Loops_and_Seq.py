@@ -191,3 +191,40 @@ Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
 TypeError: "tuple" object doesn't support item deletion
 """
+
+programming_languages = ("Rust", "Java", "Python", "C++", "Rust")
+programming_languages.count("Rust")  # 2
+
+programming_languages = ("Rust", "Java", "Python", "C++", "Rust")
+programming_languages.count("JavaScript")  # 0
+
+# programming_languages.count()
+
+"""
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: tuple.count() takes exactly one argument (0 given)
+"""
+
+programming_languages = ("Rust", "Java", "Python", "C++", "Rust", "Python")
+programming_languages.index("Python", 3)  # 5
+# Here we are starting the search at index 3 because Python shows up twice in our tuple
+
+programming_languages.index("Python", 2, 5)  # 2
+# Here we are starting the search at index 2 but stopped it at index 5 (not including index 5 while searching)
+
+numbers = (13, 2, 78, 3, 45, 67, 18, 7)
+sorted(numbers)  # [2, 3, 7, 13, 18, 45, 67, 78]
+
+programming_languages = ("Rust", "Java", "Python", "C++", "Rust", "Python")
+sorted(programming_languages, key=len)
+
+# Result
+# ['C++', 'Rust', 'Java', 'Rust', 'Python', 'Python']
+
+programming_languages = ("Rust", "Java", "Python", "C++", "Rust", "Python")
+
+print(sorted(programming_languages, reverse=True))
+
+# Result
+# ['Rust', 'Rust', 'Python', 'Python', 'Java', 'C++']
