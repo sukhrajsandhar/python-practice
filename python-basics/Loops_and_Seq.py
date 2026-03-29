@@ -293,3 +293,57 @@ for word in words:
             break
     else:
         print(f"'{word}' has no vowels")
+
+
+# What Are Ranges and How Can You Use Them in a Loop?
+# range(start, stop, step)
+
+# Example for sequence of itegers between 1 and 4:
+for num in range(1, 5):
+    print(num)
+
+# Sequence of integers between 2 and 10 in increments of 2
+for num in range(2, 11, 2):
+    print(num)
+
+# If you dont provide any arguments to range(), then you'll get a TypeError
+# The range() function only accepts integers as arguments, so if you enter a float value then you'll get a TypeError
+
+for num in range(40, 0, -10):
+    print(num)
+
+numbers = list(range(2, 11, 2))
+print(numbers)  # [2, 4, 6, 8, 10]
+
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+index = 0
+
+for language in languages:
+    print(f"Index {index} and language {language}")
+    index += 1  # Keeps track of each index
+
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+list(enumerate(languages))  # Easier way of tracking
+# [(0, 'Spanish'), (1, 'English'), (2, 'Russian'), (3, 'Chinese')]
+
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+for index, language in enumerate(languages):
+    print(f"Index {index} and language {language}")
+
+# The enumerate() function also accepts an optional start argument that specifies the starting value for the count.
+languages = ["Spanish", "English", "Russian", "Chinese"]
+
+for index, language in enumerate(languages, 1):
+    print(f"Index {index} and language {language}")
+
+
+developers = ["Naomi", "Dario", "Jessica", "Tom"]
+ids = [1, 2, 3, 4]
+
+list(zip(developers, ids))
+# [('Naomi', 1), ('Dario', 2), ('Jessica', 3), ('Tom', 4)]
