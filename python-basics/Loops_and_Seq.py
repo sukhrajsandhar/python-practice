@@ -347,3 +347,21 @@ ids = [1, 2, 3, 4]
 
 list(zip(developers, ids))
 # [('Naomi', 1), ('Dario', 2), ('Jessica', 3), ('Tom', 4)]
+
+developers = ["Naomi", "Dario", "Jessica", "Tom"]
+ids = [1, 2, 3, 4]
+
+for name, id in zip(developers, ids):
+    print(f"Name: {name}")
+    print(f"ID: {id}")
+"""
+Output:
+    Name: Naomi
+    ID: 1
+    Name: Dario
+    ID: 2
+    Name: Jessica
+    ID: 3
+    Name: Tom
+    ID: 4
+"""
