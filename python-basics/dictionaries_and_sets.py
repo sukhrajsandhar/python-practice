@@ -193,3 +193,13 @@ my_set - your_set  # {1, 5}
 
 my_set ^ your_set  # {1, 5, 6}
 # returns a new set with elements that are only in 1 or the other but not in both.
+
+# |= &= -= ^=
+# ^ These operators automatically assign the resulting set to the first set in the expression
+
+my_set -= your_set
+# my_set will be updated to {1,5}
+print(my_set)  # {1, 5}
+
+print(5 in my_set)  # True
+# in operator will result in a boolean value True or False.
